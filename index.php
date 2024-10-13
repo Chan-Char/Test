@@ -89,28 +89,28 @@ $conn->close();
         <div class="service-card" onclick="window.location.href='pages/nuadau.php'">
             <img src="image/NUADAU.PNG" alt="Nón nữa đầu">
             <div class="service-name">
-                <a href="nuadau.php">Nón nữa đầu</a>
+                <a href="pages/nuadau.php">Nón nữa đầu</a>
             </div>
         </div>
 
         <div class="service-card" onclick="window.location.href='pages/nonbaphan.php'">
             <img src="image/BAPHAN.PNG" alt="Nón ba phần tư">
             <div class="service-name">
-                <a href="nonbaphan.php">Nón ba phần tư</a>
+                <a href="pages/nonbaphan.php">Nón ba phần tư</a>
             </div>
         </div>
 
         <div class="service-card" onclick="window.location.href='pages/fullface.php'">
             <img src="image/FULLFACE.PNG" alt="Nón full face">
             <div class="service-name">
-                <a href="fullface.php">Nón Full Face</a>
+                <a href="pages/fullface.php">Nón Full Face</a>
             </div>
         </div>
 
         <div class="service-card" onclick="window.location.href='pages/nonkinh.php'">
             <img src="image/NONKINH.PNG" alt="Nón có kính">
             <div class="service-name">
-                <a href="nonkinh.php">Nón có kính</a>
+                <a href="pages/nonkinh.php">Nón có kính</a>
             </div>
         </div>
     </div>
