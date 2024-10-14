@@ -74,7 +74,7 @@ session_start();
             <div class="product">
             <img src= "<?php echo $row['images']; ?>" alt="<?php echo $row['name']; ?>">
             <h2><a href="<?php echo "pages/chitietnuadau.php?product_id=".$row['product_id']?>"><?php echo $row['name']; ?></a></h2>
-            <p>Price: $<?php echo $row['price']; ?></p>
+            <p>Price: <?php echo $row['price']; ?></p>
             </div>
         <?php endwhile; ?>
         <?php else: ?>
