@@ -3,10 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Helmet Store</title>
+    <link rel="stylesheet" href="css/1.style.css">
+    <script src="https://kit.fontawesome.com/3192225934.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Hello from GitHub Pages!</h1>
-    <p>This is my index.html file.</p>
+   <div class="wrapper">
+        <div class="header">
+            <img src="image/banner.jpg" style="width:100%;height:400px;">
+        </div>
+        <div class="menu">
+            <ul class="list_menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pages/gioithieu.html">VỀ CHÚNG TÔI</a></li>
+                <li><a href="pages/chinhsach.html">CHÍNH SÁCH</a></li>
+                <li class="dropdown">
+                    <a href="pages/sanpham.html">SẢN PHẨM</a>
+                    <ul class="sub-menu">
+                        <li><a href="nonbaphan.html">Mũ bảo hiểm 3/4 đầu</a></li>
+                        <li><a href="fullface.html">Mũ Bảo Hiểm Fullface</a> </li>
+                        <li><a href="nuadau.html">Mũ bảo hiểm 1/2</a> </li>
+                        <li><a href="nonkinh.html">Mũ bảo hiểm có kính</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+            <ul class="list_icons">
+                <li class="li_user">
+                    <a href=""><i class="fa fa-user"></i><span>TÀI KHOẢN</span></a>
+                    <ul class="sub-user">
+                        <li><a href="pages/dangnhap.html">ĐĂNG NHẬP</a></li>
+                        <li><a href="pages/dangky.html">ĐĂNG KÝ</a> </li>
+                    </ul>
+                </li>
+                <li><a href="pages/giohang.html"><i class="fa fa-shopping-bag"></i><span>GIỎ HÀNG</span></a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2>TOP 5 SẢN PHẨM BÁN CHẠY</h2>
+            <div class="product-slider">
+                <div class="product">
+                    <img src="image/product1.jpg" alt="Sản phẩm 1">
+                    <h2><a href="pages/chitietnuadau.html">Sản phẩm 1</a></h2>
+                    <p>Price: 500,000 VND</p>
+                </div>
+                <div class="product">
+                    <img src="image/product2.jpg" alt="Sản phẩm 2">
+                    <h2><a href="pages/chitietnuadau.html">Sản phẩm 2</a></h2>
+                    <p>Price: 700,000 VND</p>
+                </div>
+                <div class="product">
+                    <img src="image/product3.jpg" alt="Sản phẩm 3">
+                    <h2><a href="pages/chitietnuadau.html">Sản phẩm 3</a></h2>
+                    <p>Price: 600,000 VND</p>
+                </div>
+            </div>
+
+            <h2>DANH MỤC SẢN PHẨM</h2>
+            <div class="container">
+                <div class="service-card" onclick="window.location.href='pages/nuadau.html'">
+                    <img src="image/NUADAU.PNG" alt="Nón nữa đầu">
+                    <div class="service-name">
+                        <a href="pages/nuadau.html">Nón nữa đầu</a>
+                    </div>
+                </div>
+                <div class="service-card" onclick="window.location.href='pages/nonbaphan.html'">
+                    <img src="image/BAPHAN.PNG" alt="Nón ba phần tư">
+                    <div class="service-name">
+                        <a href="pages/nonbaphan.html">Nón ba phần tư</a>
+                    </div>
+                </div>
+                <div class="service-card" onclick="window.location.href='pages/fullface.html'">
+                    <img src="image/FULLFACE.PNG" alt="Nón full face">
+                    <div class="service-name">
+                        <a href="pages/fullface.html">Nón Full Face</a>
+                    </div>
+                </div>
+                <div class="service-card" onclick="window.location.href='pages/nonkinh.html'">
+                    <img src="image/NONKINH.PNG" alt="Nón có kính">
+                    <div class="service-name">
+                        <a href="pages/nonkinh.html">Nón có kính</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f-left">
+                <p>
+                    <a href=""><img src="image/logo.png" alt="" style="width:80px;height:80px;"></a>
+                    <br>Chở che những chuyến đi, bảo vệ mọi hành trình<br>
+                </p>
+            </div>
+
+            <div class="f-mid">
+                <p>
+                    <h2>VỀ CHÚNG TÔI</h2>
+                    <i class="fa-solid fa-shop"></i><span>Tên cửa hàng: SafeJourney<span><br>
+                    <i class="fa-solid fa-location-dot"></i><span>Địa chỉ: 56 Hoàng Diệu II, TP.Thủ Đức, TP.Hồ Chí Minh<span><br>
+                    <i class="fa-solid fa-phone"></i><span>Số điện thoại: (028) 38 291901<span><br>
+                    <i class="fa-regular fa-envelope"></i><span>Email: SafeJourney2024@gmail.com<span><br>
+                    <i class="fa-solid fa-clock"></i><span>Giờ làm việc: 7h-18h<span><br>
+                    <i class="fa-solid fa-globe"></i><span>Website:<span>
+                </p>
+            </div>
+
+            <div class="f-right">
+                <p>
+                    <h2>ĐỊA CHỈ TRÊN BẢN ĐỒ</h2>
+                    <a href="https://maps.app.goo.gl/4g3DJTLHmXVE9Yq78">
+                        <img src="image/bando.png" alt="Bản đồ" style="width:200px;height: 200px;">
+                    </a>
+                </p>
+            </div>
+
+            <div class="f-bot">
+                <ul class="social">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <p>© 2024 SafeJourney. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
