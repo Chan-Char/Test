@@ -179,6 +179,7 @@ ul.list_icons li a:hover span {
     height: 200px;
     border-radius: 8px;
     object-fit: cover; 
+    background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
