@@ -89,14 +89,14 @@ session_start(); // Khởi động session
         <div class="service-card" onclick="window.location.href='chitietnuadau.php?product_id=4'">
             <img src="../image/1.4.XANHDUONG.PNG" alt="Nón sơn xanh dương">
             <div class="service-name">
-                <a href="window.location.href='chitietnuadau.php?product_id=4">Nón sơn xanh dương</a>
+                <a href="chitietnuadau.php?product_id=4">Nón sơn xanh dương</a>
             </div>
         </div>
 
         <div class="service-card" onclick="window.location.href=''">
             <img src="../image/1.5.XAM.PNG" alt="Nón sơn nâu">
             <div class="service-name">
-                <a href="window.location.href='chitietnuadau.php?product_id=5">Nón sơn xám</a>
+                <a href="chitietnuadau.php?product_id=5">Nón sơn xám</a>
             </div>
         </div>
 
