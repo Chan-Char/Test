@@ -130,3 +130,30 @@ Nâng cao các tính năng như mở rộng danh mục sản phẩm để nâng 
 Cải tiến GitHub Pages: Thêm các tính năng tối ưu hóa việc triển khai website tĩnh, giúp người dùng không cần phụ thuộc vào các dịch vụ hosting khác.
 
 Hỗ trợ AI/ML tốt hơn: GitHub có thể phát triển thêm các công cụ tự động hoá cho quá trình phát triển mã nguồn bằng AI, như GitHub Copilot, giúp nâng cao năng suất lập trình.
+MỘT SỐ HÌNH ẢNH TRANG WEB
+
+- **Giao diện trang chủ**
+[url=https://postimg.cc/75m1S8yn][img]https://i.postimg.cc/75m1S8yn/1-Copy.png[/img][/url]
+
+- **Giao diện đăng ký**
+[url=https://postimg.cc/tnQF99hp][img]https://i.postimg.cc/tnQF99hp/2.png[/img][/url]
+
+- **Giao diện đăng nhập**
+[url=https://postimg.cc/D4rLZRgs][img]https://i.postimg.cc/D4rLZRgs/3.png[/img][/url]
+
+- **Giao diện danh mục sản phẩm**
+[url=https://postimg.cc/rzxSQtkm][img]https://i.postimg.cc/rzxSQtkm/4.png[/img][/url]
+
+- **Giao diện chi tiết sản phẩm**
+[url=https://postimg.cc/ykK05Y1T][img]https://i.postimg.cc/ykK05Y1T/5.png[/img][/url]
+
+- **Giao diện giỏ hàng**
+[url=https://postimg.cc/hf0VqWhR][img]https://i.postimg.cc/hf0VqWhR/6.png[/img][/url]
+
+- **Giao diện thanh toán**
+[url=https://postimg.cc/yDYc1QSg][img]https://i.postimg.cc/yDYc1QSg/8.png[/img][/url]
+
+- **Giao diện hoàn tất thanh toán**
+[url=https://postimg.cc/FdJjtYkT][img]https://i.postimg.cc/FdJjtYkT/9.png[/img][/url]
+
+
