@@ -42,19 +42,19 @@
             <table>
                 <tr>
                     <td><label for="user"><p><b>Tài khoản:</b></p></label></td>
-                    <td><input type="text" name="user" placeholder="Enter username"></td>
+                    <td><input type="text" name="user" placeholder="Enter username" required></td>
                 </tr>
                 <tr>
                     <td><label for="email"><p><b>Email:</b></p></label></td>
-                    <td><input type="text" name="email" placeholder="Enter email"></td>
+                    <td><input type="text" name="email" placeholder="Enter email" required ></td>
                 </tr>
                 <tr>
                     <td><label for="pass"><p><b>Password:</b></p></label></td>
-                    <td><input type="password" name="pass" placeholder="Enter password"></td>
+                    <td><input type="password" name="pass" placeholder="Enter password" required ></td>
                 </tr>
                 <tr>
                     <td><label for="confirm"><p><b>Comfirm Password:</b></p></label></td>
-                    <td><input type="password" name="confirm" placeholder="Enter password"></td>
+                    <td><input type="password" name="confirm" placeholder="Enter password" required></td>
                 </tr>
                 <tr>
                     <td></td>
