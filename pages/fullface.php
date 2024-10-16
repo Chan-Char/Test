@@ -84,14 +84,14 @@ session_start(); // Khởi động session
         <div class="service-card" onclick="window.location.href='chitietnuadau.php?product_id=44'">
             <img src="../image/4.4.PNG" alt="Nón Fullface cam đen">
             <div class="service-name">
-                <a href="window.location.href='chitietnuadau.php?product_id=44">Nón Fullface cam đen</a>
+                <a href="chitietnuadau.php?product_id=44">Nón Fullface cam đen</a>
             </div>
         </div>
 
         <div class="service-card" onclick="window.location.href='chitietnuadau.php?product_id=45'">
             <img src="../image/4.5.PNG" alt="Nón Fullface họa tiết đỏ đen">
             <div class="service-name">
-                <a href="window.location.href='chitietnuadau.php?product_id=45">Nón Fullface họa tiết đỏ đen</a>
+                <a href="chitietnuadau.php?product_id=45">Nón Fullface họa tiết đỏ đen</a>
             </div>
         </div>
 
