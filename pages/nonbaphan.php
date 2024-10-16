@@ -87,7 +87,7 @@ session_start(); // Khởi động session
         <div class="service-card" onclick="window.location.href='chitietnuadau.php?product_id=34'">
             <img src="../image/3.5.PNG" alt="Nón ba phần tư nâu">
             <div class="service-name">
-                <a href="window.location.href='chitietnuadau.php?product_id=34">Nón ba phần tư nâu</a>
+                <a href="chitietnuadau.php?product_id=34">Nón ba phần tư nâu</a>
             </div>
         </div>
 
