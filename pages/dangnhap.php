@@ -53,19 +53,7 @@
                     </table>
                     <?php
             session_start(); // Khởi động session
-
-            // Kết nối tới cơ sở dữ liệu
-                $host = 'localhost';
-                $db = 'Helmet';
-                $user = 'root';
-                $pass = '';
-
-            $conn = new mysqli($host, $user, $pass, $db);
-
-            // Kiểm tra kết nối
-            if ($conn->connect_error) {
-                die("Kết nối thất bại: " . $conn->connect_error);
-            }
+            require 'db_connection.php';
         // Lấy thông tin từ form
         if (isset($_POST['login'])) {
             $username = isset($_POST['user']) ? $_POST['user'] : '';
