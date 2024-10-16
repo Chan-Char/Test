@@ -81,7 +81,9 @@ if (isset($_POST['signup'])) {
         $password = $_POST['pass'];
         $confirm= $_POST['confirm'];
         $email = $_POST['email'];
-    
+    if (empty($username) || empty($password) || empty($confirm) || empty($email)) {
+            echo "Vui lòng điền đầy đủ thông tin.";
+        } else {
         $check_user = "SELECT * FROM users WHERE username='$username'";
         $result = $conn->query($check_user);
     
@@ -101,10 +103,10 @@ if (isset($_POST['signup'])) {
                 }
             }
         }
-            $conn->close();
     }
-}
-   
+    }
+    $conn->close();
+}  
 ?>
         </div>   
         </div>
