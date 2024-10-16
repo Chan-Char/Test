@@ -11,10 +11,20 @@ if (!isset($_SESSION['cart'])) {
 // Xử lý thêm sản phẩm vào giỏ hàng
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $product_id = $_POST['product_id'];
-    $name = $_POST['name'];
-    $price = $_POST['price'];
     $quantity = $_POST['quantity'];
 
+        // Lấy thông tin sản phẩm từ cơ sở dữ liệu
+    $product_query = $conn->prepare("SELECT name, price FROM products WHERE product_id = ?");
+    $product_query->bind_param("i", $product_id);
+    $product_query->execute();
+    $product_result = $product_query->get_result();
+    $product = $product_result->fetch_assoc();
+
+        // Kiểm tra nếu sản phẩm tồn tại
+    if ($product) {
+        $name = $product['name'];
+        $price = $product['price'];
+    
     // Kiểm tra nếu sản phẩm đã tồn tại trong giỏ hàng
     if (isset($_SESSION['cart'][$product_id])) {
         $_SESSION['cart'][$product_id]['quantity'] += $quantity; // Tăng số lượng
@@ -57,10 +67,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $cart_result = $cart_query->get_result();
 
         while ($cart_item = $cart_result->fetch_assoc()) {
-            $_SESSION['cart'][$cart_item['product_id']] = [
-                'quantity' => $cart_item['quantity'],
-                'name' => $name, // Giả sử tên và giá không thay đổi từ form
-                'price' => $price
+                // Cập nhật thông tin tên và giá từ cơ sở dữ liệu
+                $product_id = $cart_item['product_id'];
+                $product_query = $conn->prepare("SELECT name, price FROM products WHERE product_id = ?");
+                $product_query->bind_param("i", $product_id);
+                $product_query->execute();
+                $product_result = $product_query->get_result();
+                $product = $product_result->fetch_assoc();
+            
+                $_SESSION['cart'][$cart_item['product_id']] = [
+                    'quantity' => $cart_item['quantity'],
+                    'name' => $name, // Giả sử tên và giá không thay đổi từ form
+                    'price' => $price
             ];
         }
     }
