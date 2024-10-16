@@ -1,19 +1,6 @@
 <?php
 session_start();
-
-// Kết nối đến cơ sở dữ liệu
-$servername = "localhost";
-$username = "root";
-$password = ""; // Mật khẩu của bạn
-$dbname = "helmet"; // Tên cơ sở dữ liệu của bạn
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Kiểm tra kết nối
-if ($conn->connect_error) {
-    die("Kết nối không thành công: " . $conn->connect_error);
-}
-
+require 'db_connection.php';
 // Lấy dữ liệu sản phẩm từ cơ sở dữ liệu
 $product_id = isset($_GET['product_id']) ? $_GET['product_id'] : 1;
 
