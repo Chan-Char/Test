@@ -36,11 +36,11 @@
                     <table>
                     <tr>
                         <td><label for="user"><p><b>Tài khoản:</b></p></label></td>
-                        <td><input type="text" id="user" name="user" placeholder="Enter username"></td>
+                        <td><input type="text" id="user" name="user" placeholder="Enter username" required></td>
                     </tr>
                     <tr>
                         <td><label for="pass"><p><b>Password:</b></p></label></td>
-                        <td><input type="password" id="pass" name="pass" placeholder="Enter password"></td>
+                        <td><input type="password" id="pass" name="pass" placeholder="Enter password" required ></td>
                     </tr>
                     <tr>
                         <td>Bạn mới biết đến shop?</td> 
