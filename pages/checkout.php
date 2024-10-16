@@ -37,7 +37,7 @@ session_start();
                     <ul class="sub-user">
                         <li><a href="dangxuat.php">ĐĂNG XUẤT</a></li>
                     </ul>
-                    <li><a href="cart.php"><i class="fa fa-shopping-bag"></i><span>GIỎ HÀNG</span></a></li>
+                    <li><a href="giohang.php"><i class="fa fa-shopping-bag"></i><span>GIỎ HÀNG</span></a></li>
                 <?php else: ?>
                     <a href=""><i class="fa fa-user"></i><span>TÀI KHOẢN</span></a>
                     <ul class="sub-user">
