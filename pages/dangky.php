@@ -63,17 +63,7 @@
         </form> 
         <?php
 session_start(); 
-
-$host = 'localhost';
-$db = 'Helmet';
-$user = 'root';
-$pass = '';
-
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die("Kết nối thất bại: " . $conn->connect_error);
-}
+require 'db_connection.php';
 if (isset($_POST['signup'])) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = $_POST['user'];
