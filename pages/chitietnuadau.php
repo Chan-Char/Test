@@ -43,7 +43,7 @@ $conn->close();
     </div>
     <div class="menu">
         <ul class="list_menu">
-            <li><a href="index.php">HOME</a></li>
+            <li><a href="../index.php">HOME</a></li>
             <li><a href="gioithieu.php">VỀ CHÚNG TÔI</a></li>
             <li><a href="chinhsach.php">CHÍNH SÁCH</a></li>
             <li class="dropdown">
