@@ -131,21 +131,21 @@ Cải tiến GitHub Pages: Thêm các tính năng tối ưu hóa việc triển 
 Hỗ trợ AI/ML tốt hơn: GitHub có thể phát triển thêm các công cụ tự động hoá cho quá trình phát triển mã nguồn bằng AI, như GitHub Copilot, giúp nâng cao năng suất lập trình.
 
 MỘT SỐ HÌNH ẢNH TRANG WEB
-![trang chủ](./images/1.png)
+![trang chủ](./image/1.png)
 
-![đăng ký](./images/2.png)
+![đăng ký](./image/2.png)
 
-![đăng nhập](./images/3.png)
+![đăng nhập](./image/3.png)
 
-![danh mục sp](./images/4.png)
+![danh mục sp](./image/4.png)
 
-![chi tiết sp](./images/5.png)
+![chi tiết sp](./image/5.png)
 
-![giỏ hàng](./images/6.png)
+![giỏ hàng](./image/6.png)
 
-![đặt hàng thanh toán](./images/8.png)
+![đặt hàng thanh toán](./image/8.png)
 
-![hoàn tất](./images/9.png)
+![hoàn tất](./image/9.png)
 
 
 
