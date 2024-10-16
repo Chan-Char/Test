@@ -18,7 +18,6 @@
                 <li><a href="gioithieu.php">VỀ CHÚNG TÔI</a></li>
                 <li><a href="chinhsach.php">CHÍNH SÁCH</a></li>
                 <li class="dropdown">
-                    <a href="danhmucsp.php">SẢN PHẨM</a>
                     <a href="sanpham.php">SẢN PHẨM</a>
                     <ul class="sub-menu">
                         <li><a href="nonbaphan.php">Mũ bảo hiểm 3/4 đầu</a></li>
