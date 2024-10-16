@@ -51,7 +51,7 @@ session_start();
         <div class="main">
                 <h2> TOP 5 SẢN PHẨM BÁN CHẠY</h2>
         <?php
-        require 'db_connection.php';
+        require 'pages/db_connection.php';
         $sql = "SELECT p.product_id, p.name, p.price, p.images, SUM(oi.quantity) AS total_sold
         FROM products p
         LEFT JOIN order_items oi ON p.product_id = oi.product_id
