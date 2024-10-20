@@ -48,7 +48,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><input type="submit" name="login" value="login"></td>
+                        <td><input type="submit" name="login" value="SIGN IN"></td>
                     </tr>
                     </table>
                     <?php
