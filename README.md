@@ -135,20 +135,26 @@ MỘT SỐ HÌNH ẢNH TRANG WWEB
 - **Giao diện trang chủ**
 ![trang chủ](./image/1.png)
 
+
 - **Trang đăng ký**
 ![đăng ký](./image/2.png)
+
 
 - **Trang đăng nhập**
 ![đăng nhập](./image/3.png)
 
+
 - **Trang danh mục sản phẩm**
 ![danh mục sp](./image/4.png)
+
 
 - **Trang chi tiết sản phẩm**
 ![chi tiết sp](./image/5.png)
 
+
 - **Trang giỏ hàng**
 ![giỏ hàng](./image/6.png)
+
 
 - **Trang đặt hàng**
 ![đặt hàng thanh toán](./image/8.png)
