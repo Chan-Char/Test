@@ -57,7 +57,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" name="signup" value="signup"></td>
+                    <td><input type="submit" name="signup" value="SIGN UP"></td>
                 </tr>
             </table>
         </form> 
