@@ -59,31 +59,39 @@
             $username = isset($_POST['user']) ? $_POST['user'] : '';
             $password = isset($_POST['pass']) ? $_POST['pass'] : '';
 
-            $sql = "SELECT * FROM users WHERE username='$username' AND password='$password' LIMIT 1";
-            $result = $conn->query($sql);
+            $sql = $conn->prepare("SELECT * FROM users WHERE username= ?  LIMIT 1");
+            $sql->bind_param("s", $username);
+            $sql->execute();
+            $result = $sql->get_result();
 
             if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
-                $_SESSION['username'] = $username; 
-                $_SESSION['user_id'] = $row['user_id']; // Lưu ID người dùng vào session
+                if (password_verify($password, $row['password'])) {
+                    $_SESSION['username'] = $username; 
+                    $_SESSION['user_id'] = $row['user_id']; 
+                
         
-            // Truy vấn giỏ hàng của người dùng
-                $cart_sql = "SELECT * FROM cart WHERE user_id='" . $row['id'] . "'";
-                $cart_result = $conn->query($cart_sql);
+                // Truy vấn giỏ hàng của người dùng
+                    $cart_sql = "SELECT * FROM cart WHERE user_id='" . $row['id'] . "'";
+                    $cart_result = $conn->query($cart_sql);
         
-                $cart_items = [];
-                if ($cart_result->num_rows > 0) {
-                    while ($cart_row = $cart_result->fetch_assoc()) {
-                        $cart_items[] = $cart_row; // Lưu từng sản phẩm vào mảng giỏ hàng
-                    }
-                }
+                    $cart_items = [];
+                        if ($cart_result->num_rows > 0) {
+                            while ($cart_row = $cart_result->fetch_assoc()) {
+                                $cart_items[] = $cart_row; // Lưu từng sản phẩm vào mảng giỏ hàng
+                            }
+                        }
                     $_SESSION['cart'] = $cart_items; // Lưu giỏ hàng vào session
-                header("Location: ../index.php"); 
-                exit();
+                    header("Location: ../index.php"); 
+                    exit();
+                }else{
+                    echo "Mật khẩu của bạn không đúng";
+                }
             } 
             else{
-                echo "Tài khoản hoặc mật khẩu không đúng.";
+                echo "Tài khoản không tồn tại";
                 }
+            $sql->close();
             $conn->close();
         }
         ?>
