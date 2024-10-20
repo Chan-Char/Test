@@ -75,7 +75,6 @@ if (isset($_POST['signup'])) {
         } else {
         $check_user = "SELECT * FROM users WHERE username='$username'";
         $result = $conn->query($check_user);
-    
         if ($result->num_rows > 0) {
             echo "Tên người dùng đã tồn tại. Vui lòng chọn tên khác.";
         } 
@@ -83,9 +82,10 @@ if (isset($_POST['signup'])) {
             if ($password !== $confirm) {
                 echo "Mật khẩu xác nhận không khớp.";
             } else {
-                $sql = "INSERT INTO users (username,password,email) VALUES ('$username','$password','$email')";
+                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                $sql = "INSERT INTO users (username,password,email) VALUES ('$username','$hashedPassword','$email')";
             
-                if ($conn->query($sql) === TRUE) {
+                if ($conn->query($sql) == TRUE) {
                     echo "Đăng ký thành công. Bạn có thể đăng nhập ngay bây giờ.";
                 } else {
                     echo "Lỗi: " . $sql . "<br>" . $conn->error;
