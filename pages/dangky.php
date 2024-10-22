@@ -85,7 +85,7 @@ if (isset($_POST['signup'])) {
                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
                 $sql = "INSERT INTO users (username,password,email) VALUES ('$username','$hashedPassword','$email')";
             
-                if ($conn->query($sql) == TRUE) {
+                if ($conn->query($sql) === TRUE) {
                     echo "Đăng ký thành công. Bạn có thể đăng nhập ngay bây giờ.";
                 } else {
                     echo "Lỗi: " . $sql . "<br>" . $conn->error;
